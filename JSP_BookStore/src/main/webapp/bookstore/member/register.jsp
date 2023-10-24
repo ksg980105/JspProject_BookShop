@@ -27,8 +27,8 @@
 </head>
 <body>
 
-<div class="container">
-  <h2 align="center">회원가입</h2><br><hr>
+<div class="container" style="margin-top: 0;">
+  <h2 align="center">회원가입</h2><hr>
   <form class="form-horizontal" action="<%=request.getContextPath()%>/bookstore/member/registerPro.jsp" method="post" onSubmit="return registermem()">
     <div class="form-group">
       <label class="control-label col-sm-2" for="name">이름:</label>
@@ -41,6 +41,7 @@
       <div class="col-sm-10">
         <input type="text" class="form-control" style="width:200px;" placeholder="Enter id" name="id">&nbsp;
         <button type="button" class="btn btn-default" onClick="return duplicate()">중복체크</button>
+        <span id="idmessage"></span>
       </div>
     </div>
     <div class="form-group">
@@ -84,7 +85,7 @@
         <input type="text" class="form-control" style="width:100px;" placeholder="Enter hp3" name="hp3">
       </div>
     </div>
-    <br><hr>
+    <hr>
     <div class="form-group">        
       <div class="col-sm-offset-2 col-sm-10">
         <input type="submit" class="btn btn-default" value="가입하기">&nbsp;

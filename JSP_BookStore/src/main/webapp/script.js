@@ -3,6 +3,9 @@
  */
 
 var pwcheck;
+var isCheck = false;
+var use;
+
 function registermem(){
 	
 	if($('input[name="name"]').val()==""){
@@ -45,9 +48,9 @@ function registermem(){
 		return false;
 	}
 	
-	if(!$('input[name="email"]').val().contains("@")){
+	if(!email || !email.includes("@")){
 		alert('이메일 형식이 아닙니다.');
-		$('input[name="email"]').val().focus();
+		$('input[name="email"]').focus();
 		return false;
 	}
 	
@@ -66,6 +69,35 @@ function repasswordCheck(){
 		$('#pwmessage').html("<font color=red>비번 다릅니다.</font>");
 		pwcheck = "nosame";
 	}
+}
+
+function duplicate(){
+	isCheck = true;
+	
+	if($("input[name=id]").val()==""){
+		alert("아이디를 입력하세요");
+		$("input[name=id]").focus();
+		isBlank = true;
+		return;
+	}
+	
+	$.ajax({
+			url : "id_check_proc.jsp",
+			data : ({
+				userid : $("input[name=id]").val()
+			}),
+			success : function(data){
+				if($.trim(data) == "YES"){
+					$("#idmessage").html("<font color=blue>사용 가능한 아이디입니다.</font>")
+					$("#idmessage").show();
+					use = "possible";
+				}else{
+					$("#idmessage").html("<font color=red>중복된 아이디입니다.</font>")
+					$("#idmessage").show();
+					use = "impossible";
+				}
+			}
+		});	
 }
 
 
