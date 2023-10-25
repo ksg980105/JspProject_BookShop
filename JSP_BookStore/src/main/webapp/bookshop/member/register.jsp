@@ -23,10 +23,36 @@
 		background-position: right;
 		background-size: 350px;
 	}
+	body{
+  		position: static;
+  		width: 100%;
+  		height: 100%;
+  		margin: 0;
+  		padding: 0;
+  	}
+  	.background-overlay{
+  		position: absolute;
+  		top: 0;
+  		right: 0;
+  		bottom: 0;
+  		left: 0;
+  		background-image: url('../../images/background/cc.png');
+  		background-repeat: no-repeat;
+  		background-attachment: fixed;
+  		background-size: cover;
+  		opacity: 0.3;
+  		z-index: -1;
+  	}
+  	.container{
+  		position: static;
+  		z-index: 100;
+  		background-color: rgba(255,255,255,0.0);
+  		padding: 10px;
+  	}
   </style>
 </head>
 <body>
-
+<div class="background-overlay"></div>
 <div class="container" style="margin-top: 0;">
   <h2 align="center">회원가입</h2><hr>
   <form class="form-horizontal" action="<%=request.getContextPath()%>/bookstore/member/registerPro.jsp" method="post" onSubmit="return registermem()">

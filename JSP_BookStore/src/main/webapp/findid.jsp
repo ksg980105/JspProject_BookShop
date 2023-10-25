@@ -7,7 +7,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>회원가입</title>
+  <title>아이디 찾기</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -17,12 +17,6 @@
   <style>
 	.col-sm-10{
 		display: flex;
-	}
-	.container{
-		background-image: url("../../images/man.jpg");
-		background-repeat: no-repeat;
-		background-position: right;
-		background-size: 350px;
 	}
   </style>
 </head>

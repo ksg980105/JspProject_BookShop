@@ -9,7 +9,6 @@ import javax.naming.Context;
 import javax.naming.InitialContext;
 import javax.sql.DataSource;
 
-import my.member.MemberBean;
 
 public class CategoryDao {
 	Connection conn = null;

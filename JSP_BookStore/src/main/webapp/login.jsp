@@ -12,8 +12,39 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style type="text/css">
+  	body{
+  		position: static;
+  		width: 100%;
+  		height: 100%;
+  		margin: 0;
+  		padding: 0;
+  	}
+  	.background-overlay{
+  		position: absolute;
+  		top: 0;
+  		right: 0;
+  		bottom: 0;
+  		left: 0;
+  		background-image: url('images/background/bb.jpg');
+  		background-repeat: no-repeat;
+  		background-attachment: fixed;
+  		background-size: cover;
+  		opacity: 0.3;
+  		z-index: -1;
+  	}
+  	.container{
+  		position: static;
+  		z-index: 100;
+  		background-color: rgba(255,255,255,0.0);
+  		padding: 10px;
+  	}
+  	
+  </style>
  </head>
 <body>
+
+<div class="background-overlay"></div>
 
 <div class="container" align="center">
   <h2>로그인</h2>
