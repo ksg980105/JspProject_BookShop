@@ -69,6 +69,8 @@ function registermem(){
 	}
 }
 
+
+
 function repasswordCheck(){
 	if($('input[name="password"]').val() == $('input[name="repassword"]').val()){
 		$('#pwmessage').html("<font color=blue>비번이 일치합니다.</font");

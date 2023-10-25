@@ -15,7 +15,7 @@
 	String msg,url;
 	if(mb != null){ //계정정보 있을때
 		if(mb.getId().equals("admin")){	//관리자 계정
-			msg = mb.getName()+"관리자님 환영합니다.";
+			msg = mb.getName()+"님 환영합니다.";
 			url = "bookshop/admin/adminmain.jsp";
 		}else{	//사용자 계정
 			msg = mb.getName()+"님 환영합니다.";
