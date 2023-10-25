@@ -26,10 +26,10 @@
 		display: flex;
 	}
 	.container{
-		background-image: url("../../images/man.jpg");
+		background-image: url("../../images/privacy.jpeg");
 		background-repeat: no-repeat;
 		background-position: right;
-		background-size: 350px;
+		background-size: 400px;
 	}
   </style>
 </head>
