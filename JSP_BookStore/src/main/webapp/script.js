@@ -15,7 +15,14 @@ function registermem(){
 	}
 	
 	if($('input[name="id"]').val()==""){
-		alert('이름을 입력하세요.');
+		alert('아이디를 입력하세요.');
+		$('input[name="id"]').focus();
+		return false;
+	}else if(isCheck == false){
+		alert("중복체크를 먼저 하세요.");
+		return false;
+	}else if(use == "impossible"){
+		alert('중복된 아이디입니다.');
 		$('input[name="id"]').focus();
 		return false;
 	}
@@ -48,6 +55,7 @@ function registermem(){
 		return false;
 	}
 	
+	var email = $('input[name="email"]').val();
 	if(!email || !email.includes("@")){
 		alert('이메일 형식이 아닙니다.');
 		$('input[name="email"]').focus();
@@ -66,7 +74,7 @@ function repasswordCheck(){
 		$('#pwmessage').html("<font color=blue>비번이 일치합니다.</font");
 		pwcheck = "same";
 	}else{
-		$('#pwmessage').html("<font color=red>비번 다릅니다.</font>");
+		$('#pwmessage').html("<font color=red>비번이 일치하지 않습니다.</font>");
 		pwcheck = "nosame";
 	}
 }

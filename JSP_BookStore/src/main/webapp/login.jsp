@@ -28,9 +28,9 @@
       <input type="password" class="form-control" style="width:200px;" placeholder="Enter password" name="password">
     </div>
     <button type="submit" style="width:200px;" class="btn btn-default">로그인</button><br><br>
-    <input type="button" value="회원 가입" style="width:200px;" class="btn btn-default" onClick="location.href='<%=request.getContextPath()%>/bookstore/member/register.jsp'"><br><br>
-    <input type="button" value="아이디찾기" style="width:200px;" class="btn btn-default" onClick="location.href='<%=request.getContextPath()%>/bookstore/member/register.jsp'"><br><br>
-    <input type="button" value="비밀번호찾기" style="width:200px;" class="btn btn-default" onClick="location.href='<%=request.getContextPath()%>/bookstore/member/register.jsp'">
+    <input type="button" value="회원 가입" style="width:200px;" class="btn btn-default" onClick="location.href='<%=request.getContextPath()%>/bookshop/member/register.jsp'"><br><br>
+    <input type="button" value="아이디찾기" style="width:200px;" class="btn btn-default" onClick="location.href='findid.jsp'"><br><br>
+    <input type="button" value="비밀번호찾기" style="width:200px;" class="btn btn-default" onClick="location.href='findpw.jsp'">
   </form>
 </div>
 

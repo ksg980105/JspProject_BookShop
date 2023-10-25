@@ -61,8 +61,8 @@
     <div class="form-group">
       <label class="control-label col-sm-2" for="ssn">주민등록번호:</label>
       <div class="col-sm-10">
-        <input type="text" class="form-control" style="width:200px;" placeholder="Enter ssn1" name="ssn1">&nbsp; _ &nbsp;
-        <input type="text" class="form-control" style="width:200px;" placeholder="Enter ssn2" name="ssn2">
+        <input type="text" class="form-control" maxlength="6" style="width:200px;" placeholder="Enter ssn1" name="ssn1">&nbsp; _ &nbsp;
+        <input type="text" class="form-control" maxlength="7" style="width:200px;" placeholder="Enter ssn2" name="ssn2">
       </div>
     </div>
     <div class="form-group">
