@@ -77,25 +77,25 @@
   <div class="row">
     <div class="col-md-4">
       <div class="thumbnail">
-          <img src="images/홍대점.jpeg" alt="Lights" style="width:100%">
+          <img src="images/신촌점.jpeg" alt="Lights" style="width:100%">
           <div class="caption">
-            <p style="text-align: center;">홍대점</p>
+            <p style="text-align: center;">신촌점</p>
           </div>
       </div>
     </div>
     <div class="col-md-4">
       <div class="thumbnail">
-          <img src="images/건대점.jpeg" alt="Nature" style="width:100%">
+          <img src="images/판교점.jpeg" alt="Nature" style="width:100%">
           <div class="caption">
-            <p style="text-align: center;">건대점</p>
+            <p style="text-align: center;">판교점</p>
           </div>
       </div>
     </div>
     <div class="col-md-4">
       <div class="thumbnail">
-          <img src="images/서울대입구점.jpeg" alt="Fjords" style="width:100%">
+          <img src="images/강남점.jpeg" alt="Fjords" style="width:100%">
           <div class="caption">
-            <p style="text-align: center;">서울대입구점</p>
+            <p style="text-align: center;">강남점</p>
           </div>
       </div>
     </div>

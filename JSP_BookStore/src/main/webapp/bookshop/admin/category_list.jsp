@@ -27,7 +27,7 @@
 
 <div class="container">
   <h2 align="center">카테고리 관리</h2>
-  <table class="table" style="margin-left: 350px; margin-top: 50px; width: 500px;">
+  <table class="table" style="margin-left: 350px; margin-top: 50px; width: 300px;">
       <tr>
         <th>카테고리명</th>
         <th>관리</th>
