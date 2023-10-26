@@ -111,6 +111,72 @@ function duplicate(){
 		});	
 }
 
+function findidcheck(){
+	if($('input[name="name"]').val()==""){
+		alert('이름을 입력하세요.');
+		$('input[name="name"]').focus();
+		return false;
+	}
+	
+	if($('input[name="ssn1"]').val()==""){
+		alert('주민등록번호를 입력하세요.');
+		$('input[name="ssn1"]').focus();
+		return false;
+	}
+	
+	if($('input[name="ssn2"]').val()==""){
+		alert('주민등록번호를 입력하세요.');
+		$('input[name="ssn2"]').focus();
+		return false;
+	}
+}
+
+function findpwcheck(){
+	if($('input[name="id"]').val()==""){
+		alert('아이디를 입력하세요.');
+		$('input[name="id"]').focus();
+		return false;
+	}
+	
+	if($('input[name="name"]').val()==""){
+		alert('이름을 입력하세요.');
+		$('input[name="name"]').focus();
+		return false;
+	}
+	
+	if($('input[name="ssn1"]').val()==""){
+		alert('주민등록번호를 입력하세요.');
+		$('input[name="ssn1"]').focus();
+		return false;
+	}
+	
+	if($('input[name="ssn2"]').val()==""){
+		alert('주민등록번호를 입력하세요.');
+		$('input[name="ssn2"]').focus();
+		return false;
+	}
+}
+
+function productupdate(){
+	if(isNaN($('input[name="pqty"]').val())){
+		alert('숫자로 입력하세요.');
+		$('input[name="pqty"]').focus();
+		return false;
+	}
+	
+	if(isNaN($('input[name="point"]').val())){
+		alert('숫자로 입력하세요.');
+		$('input[name="point"]').focus();
+		return false;
+	}
+	
+	if(isNaN($('input[name="price"]').val())){
+		alert('숫자로 입력하세요.');
+		$('input[name="price"]').focus();
+		return false;
+	}
+}
+
 
 
 

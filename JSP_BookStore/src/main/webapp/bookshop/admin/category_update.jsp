@@ -27,23 +27,53 @@
   <script type="text/javascript">
   function updatecategory(){
 		if($('input[name="cname"]').val()==""){
-			alert('수정할 아이디를 입력하세요.');
+			alert('카테고리명을 입력하세요.');
 			$('input[name="cname"]').focus();
 			return false;
 		}
-	}
+  }
   </script>
+  <style>
+	.col-md-4 {
+		display: flex;
+	}
+	.col-sm-10{
+		display: flex;
+	}
+	body{
+  		width: 100%;
+  		height: 100%;
+  		margin: 0;
+  		padding: 0;
+  	}
+  	.background-overlay{
+  		position: absolute;
+  		top: 0;
+  		right: 0;
+  		bottom: 0;
+  		left: 0;
+  		background-image: url('../../images/background/a1.jpg');
+  		background-size: 100%;
+  		opacity: 0.2;
+  		z-index: -1;
+  	}
+  	.container{
+  		z-index: 100;
+  		background-color: rgba(255,255,255,0.0);
+  		padding: 10px;
+  	}
+</style>
 </head>
 <body>
-
 <form method="post" action="category_updatePro.jsp?cnum=<%=cnum%>" onSubmit="return updatecategory()">
+<div class="background-overlay"></div>
 <div class="container">
   <h2 align="center">카테고리 관리</h2>
-  <table class="table" style="margin-left: 350px; margin-top: 50px; width: 500px;">
+  <table class="table" style="margin-left: 350px; margin-top: 50px; width: 300px;">
       <tr>
         <th>카테고리명</th>
         <th>관리</th>
-      </tr>
+     </tr>
       <%
     	for(int i=0; i<lists.size(); i++){
     		CategoryBean cb = lists.get(i);

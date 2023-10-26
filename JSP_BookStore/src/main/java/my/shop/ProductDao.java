@@ -89,18 +89,17 @@ public class ProductDao {
 	}
 	
 	//상품 수정
-	public int updateProduct(int pnum, String pcategory, String publisher, String pqty, String price, String point) throws Exception {
+	public int updateProduct(int pnum, String publisher, String pqty, String price, String point) throws Exception {
 		Connection conn = getConnection();
 		
 		int cnt = -1;
-		String sql = "update product set pcategory=?, publisher=?, pqty=?, price=?, point=? where pnum=?";
+		String sql = "update product set publisher=?, pqty=?, price=?, point=? where pnum=?";
 		ps = conn.prepareStatement(sql);
-		ps.setString(1, pcategory);
-		ps.setString(2, publisher);
-		ps.setString(3, pqty);
-		ps.setString(4, price);
-		ps.setString(5, point);
-		ps.setInt(6, pnum);
+		ps.setString(1, publisher);
+		ps.setString(2, pqty);
+		ps.setString(3, price);
+		ps.setString(4, point);
+		ps.setInt(5, pnum);
 		
 		cnt = ps.executeUpdate();
 		

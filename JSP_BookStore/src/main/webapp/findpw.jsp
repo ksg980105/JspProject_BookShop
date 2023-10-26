@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <script src="../../script.js" type="text/javascript"></script>
+  <script src="script.js" type="text/javascript"></script>
   <style>
 	.col-sm-10{
 		display: flex;
@@ -53,7 +53,7 @@
 <div class="background-overlay"></div>
 <div class="container" style="margin-top: 0;">
   <h2 align="center">비밀번호 찾기</h2><hr>
-  <form class="form-horizontal" action="findpwPro.jsp" method="post" onSubmit="return registermem()">
+  <form class="form-horizontal" action="findpwPro.jsp" method="post" onSubmit="return findpwcheck()">
     <div class="form-group">
       <label class="control-label col-sm-2" for="id">아이디:</label>
       <div class="col-sm-10">
