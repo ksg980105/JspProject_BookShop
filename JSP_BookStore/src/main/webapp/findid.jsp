@@ -18,10 +18,34 @@
 	.col-sm-10{
 		display: flex;
 	}
+	body{
+  		width: 100%;
+  		height: 100%;
+  		margin: 0;
+  		padding: 0;
+  		background-attachment: fixed;
+  	}
+  	.background-overlay{
+  		position: absolute;
+  		top: 0;
+  		right: 0;
+  		bottom: 0;
+  		left: 0;
+  		background-image: url('images/background/찾기1.jpeg');
+  		background-size: cover;
+  		background-attachment: fixed;
+  		opacity: 0.2;
+  		z-index: -1;
+  	}
+  	.container{
+  		z-index: 100;
+  		background-color: rgba(255,255,255,0.0);
+  		padding: 10px;
+  	}
   </style>
 </head>
 <body>
-
+<div class="background-overlay"></div>
 <div class="container" style="margin-top: 0;">
   <h2 align="center">아이디 찾기</h2><hr>
   <form class="form-horizontal" action="findidPro.jsp" method="post">

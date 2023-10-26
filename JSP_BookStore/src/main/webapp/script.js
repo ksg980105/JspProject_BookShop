@@ -6,6 +6,7 @@ var pwcheck;
 var isCheck = false;
 var use;
 
+
 function registermem(){
 	
 	if($('input[name="name"]').val()==""){
@@ -109,6 +110,8 @@ function duplicate(){
 			}
 		});	
 }
+
+
 
 
 

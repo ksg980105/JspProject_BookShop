@@ -5,7 +5,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
+  <title>main</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -44,11 +44,12 @@
 <body>
 <div class="background-overlay"></div>
 <div class="container">
-  <h2>오프라인 매장</h2>
+  <h4 align="right"><font style="color: red;">온라인 매장은 로그인 후 이용가능</font></h4>
+  <h2 align="center"><br>오프라인 매장</h2>
   <div class="row">
     <div class="col-md-4">
       <div class="thumbnail">
-          <img src="images/홍대점.jpeg" alt="Lights" style="width:100%">
+          <img src="images/홍대점.jpeg" style="width:100%">
           <div class="caption">
             <p style="text-align: center;">홍대점</p>
           </div>
@@ -56,7 +57,7 @@
     </div>
     <div class="col-md-4">
       <div class="thumbnail">
-          <img src="images/건대점.jpeg" alt="Nature" style="width:100%">
+          <img src="images/건대점.jpeg" style="width:100%">
           <div class="caption">
             <p style="text-align: center;">건대점</p>
           </div>
@@ -64,7 +65,7 @@
     </div>
     <div class="col-md-4">
       <div class="thumbnail">
-          <img src="images/서울대입구점.jpeg" alt="Fjords" style="width:100%">
+          <img src="images/서울대입구점.jpeg" style="width:100%">
           <div class="caption">
             <p style="text-align: center;">서울대입구점</p>
           </div>
@@ -77,7 +78,7 @@
   <div class="row">
     <div class="col-md-4">
       <div class="thumbnail">
-          <img src="images/신촌점.jpeg" alt="Lights" style="width:100%">
+          <img src="images/신촌점.jpeg" style="width:100%">
           <div class="caption">
             <p style="text-align: center;">신촌점</p>
           </div>
@@ -85,7 +86,7 @@
     </div>
     <div class="col-md-4">
       <div class="thumbnail">
-          <img src="images/판교점.jpeg" alt="Nature" style="width:100%">
+          <img src="images/판교점.jpeg" style="width:100%; height: 265px;">
           <div class="caption">
             <p style="text-align: center;">판교점</p>
           </div>
@@ -93,7 +94,7 @@
     </div>
     <div class="col-md-4">
       <div class="thumbnail">
-          <img src="images/강남점.jpeg" alt="Fjords" style="width:100%">
+          <img src="images/강남점.jpeg" style="width:100%; height: 265px;">
           <div class="caption">
             <p style="text-align: center;">강남점</p>
           </div>
