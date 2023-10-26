@@ -29,6 +29,7 @@
       <li><a href="category_input.jsp">카테고리 등록</a></li>
       <li><a href="category_list.jsp">카테고리 관리</a></li>
       <li><a href="product_input.jsp">상품등록</a></li>
+      <li><a href="product_list.jsp">상품관리</a></li>
     </ul>
     <ul class="nav navbar-nav navbar-right">
    	  <li class="active"><a href="myInfo.jsp?id=<%=memid%>"><%=memid%></a></li>

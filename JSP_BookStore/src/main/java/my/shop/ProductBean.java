@@ -1,7 +1,7 @@
 package my.shop;
 
 public class ProductBean {
-	private int num;
+	private int pnum;
 	private String pname;
 	private String pcategory;
 	private String publisher;
@@ -11,11 +11,11 @@ public class ProductBean {
 	private String summary;
 	private int point;
 	
-	public int getNum() {
-		return num;
+	public int getPnum() {
+		return pnum;
 	}
-	public void setNum(int num) {
-		this.num = num;
+	public void setPnum(int num) {
+		this.pnum = num;
 	}
 	public String getPname() {
 		return pname;

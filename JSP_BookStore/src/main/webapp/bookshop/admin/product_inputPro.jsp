@@ -43,7 +43,7 @@
 	String msg, url;
 	if(cnt > 0){
 		msg = "등록 성공";
-		url = "product_list.jsp";
+		url = "adminmain.jsp";
 	}else{
 		msg = "등록 실패";
 		url = "product_input.jsp";
