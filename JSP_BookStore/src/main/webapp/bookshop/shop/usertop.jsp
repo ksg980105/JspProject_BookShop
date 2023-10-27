@@ -31,7 +31,7 @@
       <li><a href="product_list.jsp">게시판</a></li>
     </ul>
     <ul class="nav navbar-nav navbar-right">
-   	  <li class="active"><a href="cartList.jsp"><span class="glyphicon glyphicon-shopping-cart"></span>장바구니</a></li>
+   	  <li class="active"><a href="cartlist.jsp"><span class="glyphicon glyphicon-shopping-cart"></span>장바구니</a></li>
    	  <li class="active"><a href="myInfo.jsp?id=<%=memid%>"><%=memid%></a></li>
       <li><a href="<%=request.getContextPath()%>/logout.jsp"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
     </ul>

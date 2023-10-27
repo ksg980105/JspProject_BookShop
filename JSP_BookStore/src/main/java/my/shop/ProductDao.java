@@ -156,6 +156,7 @@ public class ProductDao {
 		if(rs.next()) {
 			pb = new ProductBean();
 			pb.setPnum(rs.getInt("pnum"));
+			pb.setPname(rs.getString("pname"));
 			pb.setPcategory(rs.getString("pcategory"));
 			pb.setPublisher(rs.getString("publisher"));
 			pb.setPimage(rs.getString("pimage"));
