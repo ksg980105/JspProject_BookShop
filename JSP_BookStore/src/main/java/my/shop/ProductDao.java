@@ -82,11 +82,35 @@ public class ProductDao {
 	}
 	
 	//카테고리에 따른 상품조회
-	public void getAllProductByCategory() throws Exception {
-		Connection conn = getConnection();
-		
-		String sql = "select * from product where category=?";
+	public ArrayList<ProductBean> getAllProductByCategory(String categoryName) throws Exception {
+	    Connection conn = null;
+	    PreparedStatement ps = null;
+	    ResultSet rs = null;
+	    ArrayList<ProductBean> products = new ArrayList<>();
+
+	        conn = getConnection();
+	        String sql = "SELECT * FROM product WHERE pcategory = ?";
+	        ps = conn.prepareStatement(sql);
+	        ps.setString(1, categoryName);
+	        rs = ps.executeQuery();
+
+	        while (rs.next()) {
+	            ProductBean pb = new ProductBean();
+	            pb.setPnum(rs.getInt("pnum"));
+	            pb.setPname(rs.getString("pname"));
+	            pb.setPcategory(rs.getString("pcategory"));
+	            pb.setPublisher(rs.getString("publisher"));
+	            pb.setPimage(rs.getString("pimage"));
+	            pb.setPqty(rs.getInt("pqty"));
+	            pb.setPrice(rs.getInt("price"));
+	            pb.setSummary(rs.getString("summary"));
+	            pb.setPoint(rs.getInt("point"));
+	            products.add(pb);
+	        }
+
+	    return products;
 	}
+
 	
 	//상품 수정
 	public int updateProduct(int pnum, String publisher, String pqty, String price, String point) throws Exception {
@@ -118,6 +142,30 @@ public class ProductDao {
 		cnt = ps.executeUpdate();
 		
 		return cnt;
+	}
+	
+	//상품이름으로 상품정보 가져오기
+	public ProductBean getAllProductByPname(String pname) throws Exception {
+		Connection conn = getConnection();
+		
+		ProductBean pb = null;
+		String sql = "select * from product where pname=?";
+		ps = conn.prepareStatement(sql);
+		ps.setString(1, pname);
+		rs = ps.executeQuery();
+		if(rs.next()) {
+			pb = new ProductBean();
+			pb.setPnum(rs.getInt("pnum"));
+			pb.setPcategory(rs.getString("pcategory"));
+			pb.setPublisher(rs.getString("publisher"));
+			pb.setPimage(rs.getString("pimage"));
+			pb.setPqty(rs.getInt("pqty"));
+			pb.setPrice(rs.getInt("price"));
+			pb.setSummary(rs.getString("summary"));
+			pb.setPoint(rs.getInt("point"));
+			
+		}
+		return pb;
 	}
 }
 
