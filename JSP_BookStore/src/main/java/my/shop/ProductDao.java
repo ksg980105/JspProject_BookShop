@@ -168,6 +168,30 @@ public class ProductDao {
 		}
 		return pb;
 	}
+	
+	public ProductBean getAllProductByPnum(int pnum) throws Exception {
+		Connection conn = getConnection();
+		
+		ProductBean pb = null;
+		String sql = "select * from product where pnum=?";
+		ps = conn.prepareStatement(sql);
+		ps.setInt(1, pnum);
+		rs = ps.executeQuery();
+		if(rs.next()) {
+			pb = new ProductBean();
+			pb.setPnum(rs.getInt("pnum"));
+			pb.setPname(rs.getString("pname"));
+			pb.setPcategory(rs.getString("pcategory"));
+			pb.setPublisher(rs.getString("publisher"));
+			pb.setPimage(rs.getString("pimage"));
+			pb.setPqty(rs.getInt("pqty"));
+			pb.setPrice(rs.getInt("price"));
+			pb.setSummary(rs.getString("summary"));
+			pb.setPoint(rs.getInt("point"));
+			
+		}
+		return pb;
+	}
 }
 
 

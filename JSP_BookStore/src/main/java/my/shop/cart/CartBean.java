@@ -35,4 +35,32 @@ public class CartBean {
 	public Vector<ProductBean> getAllProduct() {
 		return clist;
 	}
+	
+	public void updatecart(String pnum, String pqty){ //넘어온 pnum의 상품 개수를 pqty로 수정
+		for(ProductBean pb : clist) {
+			if(pb.getPnum()==Integer.parseInt(pnum)) {
+				if(Integer.parseInt(pqty)==0) {
+					clist.removeElement(pb);
+					break;
+				}else {
+					pb.setPqty(Integer.parseInt(pqty));
+					break;					
+				}
+			}
+		}
+	}
+	
+	public void deleteProduct(String pnum) {
+		for(int i=0; i<clist.size(); i++) {
+			int cPnum = clist.get(i).getPnum();
+			if(cPnum == Integer.parseInt(pnum)) {
+				clist.remove(i);
+				break;
+			}
+		}
+	}
+	
+	public void removeAllProducts() {
+		clist.removeAllElements(); //장바구니 안에 모든 요소 삭제
+	}
 }

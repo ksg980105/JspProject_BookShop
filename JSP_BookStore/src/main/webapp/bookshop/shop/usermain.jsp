@@ -13,7 +13,6 @@
     ProductDao pdao = ProductDao.getInstance();
     ArrayList<ProductBean> list = pdao.getAllProduct();
 %>
-<!DOCTYPE html>
 <html>
 <head>
   <title>메인</title>

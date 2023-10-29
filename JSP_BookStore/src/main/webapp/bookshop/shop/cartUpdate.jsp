@@ -1,7 +1,5 @@
 <%@page import="java.util.Vector"%>
 <%@page import="my.shop.ProductBean"%>
-<%@page import="java.util.ArrayList"%>
-<%@page import="my.shop.ProductDao"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 
@@ -12,6 +10,7 @@
 <%
 	request.setCharacterEncoding("UTF-8");
 	
+	int pnum = Integer.parseInt(request.getParameter("pnum"));
 	Vector<ProductBean> clist = mallCart.getAllProduct();
 %>
 
@@ -19,7 +18,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Kmarket::main layout</title>
+    <title>장바구니 수정</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <script src="https://kit.fontawesome.com/20962f3e4b.js" crossorigin="anonymous"></script>
@@ -160,6 +159,12 @@
             margin-top: 0px;
         }
     </style>
+    
+    <script>
+		function updateCart(pnum, pqty) {
+		    location.href = 'cartUpdatePro.jsp?pnum=' + pnum + '&pqty=' + pqty;
+		}
+	</script>
 </head>
 <body>
     <div id="wrapper">
@@ -199,9 +204,24 @@
                         		price += pb.getPrice() * pb.getPqty(); 	//전체 가격
                         		point += pb.getPoint() * pb.getPqty();	//전체 포인트
                         		productPrice = pb.getPrice() * pb.getPqty();
+                        		if(pnum == pb.getPnum()){
                         %>
-                        
                         <tr>
+                            <td><article>
+                               <img src="<%=imgPath%>" style="width: 50px;">
+                            </article></td>
+                            <td><%=pb.getPname()%></td>
+                            <td><input type="text" id="pqty_<%=i%>" name="pqty" size="5" value="<%=pb.getPqty()%>"></td>
+                            <td><%=pb.getPrice()%></td>
+                            <td><%=pb.getPoint()%></td>
+                            <td><%=productPrice%></td>
+                            <td>
+                            	<input type="button" value="수정하기" onClick="updateCart('<%=pb.getPnum()%>', document.getElementById('pqty_<%=i%>').value)">
+                            	<input type="button" value="취소" onClick="location.href = 'cartlist.jsp'">
+                            </td>
+                        </tr>
+                         <%}else{ %>
+                         <tr>
                             <td><article>
                                <img src="<%=imgPath%>" style="width: 50px;">
                             </article></td>
@@ -212,9 +232,10 @@
                             <td><%=productPrice%></td>
                             <td>
                             	<input type="button" value="수정" onClick="location.href = 'cartUpdate.jsp?pnum=<%=pb.getPnum()%>&pqty=<%=pb.getPqty()%>'">
-                            	<input type="button" value="삭제" onClick="location.href = 'cartDel_Pro.jsp?pnum=<%=pb.getPnum()%>'">
+                            	<input type="button" value="삭제" onClick="location.href = 'cartDeletePro.jsp'">
                             </td>
                         </tr>
+                         <%} %>
                         <%} %>
                       <%} %>
                     </table>
