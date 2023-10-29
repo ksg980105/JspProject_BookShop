@@ -168,7 +168,7 @@
                 <nav>
                     <h1>장바구니</h1>
                 </nav>
-               <form action="#">
+               <form action="caculate.jsp">
                     <table border="0" name="tab">
                         <tr>
                             <th>이미지</th>
