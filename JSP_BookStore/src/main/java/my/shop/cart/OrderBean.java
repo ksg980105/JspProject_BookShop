@@ -39,6 +39,4 @@ public class OrderBean {
 		this.amount = amount;
 	}
 	
-	
-	
 }

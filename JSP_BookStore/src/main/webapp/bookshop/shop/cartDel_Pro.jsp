@@ -10,5 +10,5 @@
 
 <script type="text/javascript">
 	alert('삭제 성공');
-	location.href="mall_cartList.jsp";
+	location.href="cartlist.jsp";
 </script>

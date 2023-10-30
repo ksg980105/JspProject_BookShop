@@ -3,6 +3,7 @@
 <%@page import="my.shop.ProductDao"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<jsp:useBean id="mallCart" class="my.shop.cart.CartBean" scope="session"/>
 <%@ include file="usertop.jsp"%>
 
 <%
@@ -41,9 +42,7 @@
 			    
 			    <input type="hidden" name="pname" value="<%=pname%>">
 				<input type="image" src="img/cartbtn.gif" width="100px">
-            	<input type="image" src="img/orderbtn.gif" width="100px">
 			</form>
-
 		</td>
 	</tr>
 </table>

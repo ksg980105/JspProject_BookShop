@@ -22,7 +22,11 @@ public class CartBean {
 			String cPname = clist.get(i).getPname(); //장바구니에 담겨있는 상품의 이름
 			if(cPname.equals(pb.getPname())) {
 				int cPqty = clist.get(i).getPqty(); //장바구니에 담겨있는 상품의 주문수량
+				if(cPqty+pqty<=pb.getPqty()) {		//총 수량보다 작을때
 				clist.get(i).setPqty(cPqty+pqty);	//같은 장바구니 상품의 주문수량 추가
+				}else {								//총수량보다 클때
+					clist.get(i).setPqty(cPqty);	//수량 추가 안됨
+				}
 				return;
 			}
 		}

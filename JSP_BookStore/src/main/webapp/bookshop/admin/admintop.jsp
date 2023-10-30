@@ -37,7 +37,7 @@
     </ul>
   </div>
 	<div class="jumbotron" style="height: 150px;">
-		<img src="<%=request.getContextPath()%>/images/booklogo.png" style="width: 200px; height: 100px;"> 
+		<img src="<%=request.getContextPath()%>/images/booklogo.png" style="width: 200px; height: 100px;" onclick="location.href='adminmain.jsp'"> 
 	</div>
 </nav>
 

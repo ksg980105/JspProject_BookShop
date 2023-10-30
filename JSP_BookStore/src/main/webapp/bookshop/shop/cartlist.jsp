@@ -19,7 +19,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Kmarket::main layout</title>
+    <title>장바구니</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <script src="https://kit.fontawesome.com/20962f3e4b.js" crossorigin="anonymous"></script>
