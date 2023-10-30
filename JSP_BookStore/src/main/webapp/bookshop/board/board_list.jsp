@@ -66,11 +66,12 @@
 <body>
 <div class="background-overlay"></div>
 	<b>글 목록(전체 글:<%=count%>)</b>
-	<table border="0" width="1100">
+	<hr>
+	<table border="0">
 		<tr>
-			<td align="right">
+			<td>
 				<a href="writeForm.jsp">
-					<input type="button" value="글쓰기">
+					<button type="button" class="btn btn-success">글쓰기</button>
 				</a>
 			</td>
 		</tr>
@@ -79,7 +80,7 @@
 	<%
 		if(count == 0){
 	%>
-	<table border="1" width="1100">
+	<table class="table table-hover">
 		<tr>
 			<td colspan="6">
 				게시판에 글이 없습니다.
@@ -87,7 +88,7 @@
 		</tr>
 	</table>
 	<%} else{ %>
-	<table border="1" width="1100" height="400">
+	<table class="table table-hover">
 		<tr>
 			<th>번호</th>
 			<th>제목</th>
@@ -109,7 +110,7 @@
 						wid = bb.getRe_level() * 20;
 				%>
 						<img src="images/level.gif" width="<%=wid%>">
-						<img src="images/re.gif">
+						<img src="images/re.gif" width="25px;">
 				<%
 					}else{ //원글
 
@@ -121,7 +122,7 @@
 			<%
 				if(bb.getReadcount()>=10){
 			%>
-				<img src="images/hot.gif">
+				<img src="images/hot.gif" width="25px;">
 			<%
 				}
 			%>

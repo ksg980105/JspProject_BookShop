@@ -193,10 +193,10 @@
     <div id="wrapper">
         <main id="product">
             <section class="cart">
-                <nav>
+                <nav style="margin-left: 20px;">
                     <h1>장바구니</h1>
                 </nav>
-               <form action="caculate.jsp">
+               <form action="caculate.jsp" style="margin-left: 20px;">
                     <table border="0" name="tab">
                         <tr>
                             <th>이미지</th>
