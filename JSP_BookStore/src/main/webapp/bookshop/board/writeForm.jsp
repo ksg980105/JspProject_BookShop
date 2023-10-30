@@ -45,6 +45,7 @@
 <body>
 <b>글쓰기</b>
 <div class="background-overlay"></div>
+<div class="글쓰기"></div>
 <form method="post" name="writeForm" action="writeProc.jsp" onsubmit="return writeSave()">
 	<table border="1" width="450" align="center">
 		<tr>
@@ -56,24 +57,25 @@
 			<td width="150"align="center">이 름</td>
 			<td width="300">
 				<%=memid%>
+				<input type="hidden" name="writer" value="<%=memid%>">
 			</td>
 		</tr>
 		<tr>
 			<td width="150" align="center">제 목</td>
 			<td width="300">
-				<input type="text" name="subject" maxlength="50" value="어떤글">
+				<input type="text" name="subject" maxlength="50" value="책을 읽자">
 			</td>
 		</tr>
 		<tr>
 			<td width="150" align="center">Email</td>
 			<td width="300">
-				<input type="text" name="email" maxlength="10" value="aa@xx.com">
+				<input type="text" name="email" maxlength="10" value="a@b.c">
 			</td>
 		</tr>
 		<tr>
 			<td width="150" align="center">내 용</td>
 			<td width="300">
-				<textarea name="content" id="ta" rows="15" cols="50">호호호</textarea>
+				<textarea name="content" id="ta" rows="15" cols="50">book</textarea>
 			</td>
 		</tr>
 		<tr>

@@ -37,7 +37,6 @@
             width: 360px;
             height: 350px;
             padding: 10px;
-            margin-right: 20px;
             background: #fff;
             border: 1px solid #d3d3d3;
             box-sizing: border-box;
@@ -94,11 +93,11 @@
         <main id="product">
             <section class="cart">
                 <nav>
-                    <h1>결제</h1>
+                    <h1 align="center">결제</h1>
                 </nav>
                <form action="caculate.jsp">
                     
-                    <div class="total">
+                    <div class="total" style="margin: auto;">
                         <h2>전체합계</h2>
                         <table>
                             <tr>
