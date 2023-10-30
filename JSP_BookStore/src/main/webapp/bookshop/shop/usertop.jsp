@@ -26,16 +26,16 @@
       <a class="navbar-brand" href="<%=request.getContextPath()%>/bookshop/shop/usermain.jsp">BookShop</a>
     </div>
     <ul class="nav navbar-nav">
-      <li><a href="board_list.jsp">게시판</a></li>
+      <li><a href="../board/board_list.jsp">게시판</a></li>
     </ul>
     <ul class="nav navbar-nav navbar-right">
-   	  <li class="active"><a href="cartlist.jsp"><span class="glyphicon glyphicon-shopping-cart"></span>장바구니</a></li>
-   	  <li class="active"><a href="myInfo.jsp?id=<%=memid%>"><%=memid%></a></li>
+   	  <li class="active"><a href="<%=request.getContextPath()%>/bookshop/shop/cartlist.jsp"><span class="glyphicon glyphicon-shopping-cart"></span>장바구니</a></li>
+   	  <li class="active"><a href="<%=request.getContextPath()%>/bookshop/shop/myInfo.jsp?id=<%=memid%>"><%=memid%></a></li>
       <li><a href="<%=request.getContextPath()%>/logout.jsp"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
     </ul>
   </div>
 	<div class="jumbotron" style="height: 150px;">
-		<img src="<%=request.getContextPath()%>/images/booklogo.png" style="width: 200px; height: 100px;" onclick="location.href='usermain.jsp'"> 
+		<img src="<%=request.getContextPath()%>/images/booklogo.png" style="width: 200px; height: 100px;" onclick="location.href='<%=request.getContextPath()%>/bookshop/shop/usermain.jsp'"> 
 	</div>
 </nav>
 

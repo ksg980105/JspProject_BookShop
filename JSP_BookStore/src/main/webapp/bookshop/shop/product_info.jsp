@@ -6,6 +6,35 @@
 <jsp:useBean id="mallCart" class="my.shop.cart.CartBean" scope="session"/>
 <%@ include file="usertop.jsp"%>
 
+<style>
+	body{
+		  	position: static;
+		  	width: 100%;
+		  	height: 100%;
+		  	margin: 0;
+		  	padding: 0;
+		}
+	.background-overlay{
+	  	position: absolute;
+	  	top: 0;
+	  	right: 0;
+	  	bottom: 0;
+	  	left: 0;
+	  	background-image: url('../board/images/11.jpeg');
+	  	background-repeat: no-repeat;
+	  	background-attachment: fixed;
+	  	background-size: cover;
+	  	opacity: 0.3;
+	  	z-index: -1;
+	}
+	.container{
+	  	position: static;
+	  	z-index: 100;
+	  	background-color: rgba(255,255,255,0.0);
+	  	padding: 10px;
+	}
+</style>
+
 <%
 	request.setCharacterEncoding("UTF-8");
 
@@ -14,7 +43,7 @@
 	ProductBean pb = pdao.getAllProductByPname(pname);
 	String imgPath = request.getContextPath() + "/bookshop/images/" + pb.getPimage();
 %>
-
+<div class="background-overlay"></div>
 <table style="width: 80%; height: 80%; margin: auto;">
 	<tr>
 		<td width="30%"><img src="<%=imgPath%>" style="width: 300px; height: 500px;"></td>

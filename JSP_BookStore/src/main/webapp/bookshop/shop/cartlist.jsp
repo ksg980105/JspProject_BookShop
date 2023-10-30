@@ -43,7 +43,7 @@
 	  		right: 0;
 	  		bottom: 0;
 	  		left: 0;
-	  		background-image: url('../../images/cart.jpeg');
+	  		background-image: url('../board/images/22.jpeg');
 	  		background-repeat: no-repeat;
 	  		background-attachment: fixed;
 	  		background-size: cover;
@@ -201,7 +201,7 @@
                         <tr>
                             <th>이미지</th>
                             <th>제목</th>
-                            <th>총수량</th>
+                            <th>주문수량</th>
                             <th>판매가</th>
                             <th>포인트</th>
                             <th>소계</th>
