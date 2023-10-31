@@ -68,7 +68,7 @@
 <form method="post" action="category_updatePro.jsp?cnum=<%=cnum%>" onSubmit="return updatecategory()">
 <div class="background-overlay"></div>
 <div class="container">
-  <h2 align="center">카테고리 관리</h2>
+  <h2 align="center">카테고리 수정</h2>
   <table class="table" style="margin-left: 350px; margin-top: 50px; width: 300px;">
       <tr>
         <th>카테고리명</th>
@@ -96,7 +96,6 @@
         <td><%=cb.getCname()%></td>
         <td>
 			<a href="category_update.jsp?cnum=<%=cb.getCnum()%>"><input type="button" value="수정"></a>
-			<input type="reset" value="취소" onclick="location.href='category_list.jsp'">
 		</td>
       </tr>
       <%} 

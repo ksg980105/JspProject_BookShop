@@ -27,7 +27,9 @@
     </ul>
   </div>
 	<div class="jumbotron" style="height: 150px;">
-		<img src="<%=request.getContextPath()%>/images/booklogo.png" style="width: 200px; height: 100px;"> 
+		<a href="<%=request.getContextPath()%>/main.jsp">
+			<img src="<%=request.getContextPath()%>/images/booklogo.png" style="width: 200px; height: 100px;">
+		</a> 
 	</div>
 </nav>
 

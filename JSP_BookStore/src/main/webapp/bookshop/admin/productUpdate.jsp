@@ -51,7 +51,7 @@
 <div class="background-overlay"></div>
 <div class="container">
 <form method="post" action="productUpdatePro.jsp?pnum=<%=pnum%>" onsubmit="return productupdate()">
-  <h2 align="center">전체 상품 조회</h2>
+  <h2 align="center">수정하기</h2>
   <table class="table">
     <thead>
       <tr class="active">

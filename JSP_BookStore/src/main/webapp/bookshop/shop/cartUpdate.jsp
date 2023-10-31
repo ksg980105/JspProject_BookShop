@@ -29,6 +29,33 @@
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="./css/product.css">
     <style>
+    	body{
+	  		position: static;
+	  		width: 100%;
+	  		height: 100%;
+	  		margin: 0;
+	  		padding: 0;
+	  	}
+	  	.background-overlay{
+	  		position: absolute;
+	  		top: 0;
+	  		right: 0;
+	  		bottom: 0;
+	  		left: 0;
+	  		background-image: url('../board/images/22.jpeg');
+	  		background-repeat: no-repeat;
+	  		background-attachment: fixed;
+	  		background-size: cover;
+	  		opacity: 0.3;
+	  		z-index: -1;
+	  	}
+	  	.container{
+	  		position: static;
+	  		z-index: 100;
+	  		background-color: rgba(255,255,255,0.0);
+	  		padding: 10px;
+	  	}
+	  	
         #product > .cart > form {}
 
         #product > .cart > form > table {
@@ -38,7 +65,7 @@
             border-spacing: 0;
         }
 
-        #product > .cart > form > table tr { border-bottom: 1px solid #d3d3d3 ;}
+        #product > .cart > form > table tr { border-bottom: 1px solid #d3d3d3 ;  background-color: white;}
 
         #product > .cart > form > table th:first-child {width: 60px;}
 
@@ -112,6 +139,7 @@
             background: #fff;
             border: 1px solid #d3d3d3;
             box-sizing: border-box;
+            position: fixed;
         }
 
         #product > .cart > form > .total > h2 {
@@ -167,6 +195,7 @@
 	</script>
 </head>
 <body>
+<div class="background-overlay"></div>
     <div id="wrapper">
         <main id="product">
             <section class="cart">

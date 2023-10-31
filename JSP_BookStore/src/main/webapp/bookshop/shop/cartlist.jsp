@@ -129,7 +129,7 @@
         }
 
         #product > .cart > form > .total {
-        	margin-top: -100px;
+        	margin-top: -120px;
             float: right;
             width: 360px;
             height: 350px;
