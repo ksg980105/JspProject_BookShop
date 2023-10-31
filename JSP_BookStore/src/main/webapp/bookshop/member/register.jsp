@@ -55,7 +55,7 @@
 <div class="background-overlay"></div>
 <div class="container" style="margin-top: 0;">
   <h2 align="center">회원가입</h2><hr>
-  <form class="form-horizontal" action="<%=request.getContextPath()%>/bookstore/member/registerPro.jsp" method="post" onSubmit="return registermem()">
+  <form class="form-horizontal" action="<%=request.getContextPath()%>/bookshop/member/registerPro.jsp" method="post" onSubmit="return registermem()">
     <div class="form-group">
       <label class="control-label col-sm-2" for="name">이름:</label>
       <div class="col-sm-10">

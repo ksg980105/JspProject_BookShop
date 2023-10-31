@@ -131,6 +131,7 @@
         }
 
         #product > .cart > form > .total {
+        	margin-top: -120px;
             float: right;
             width: 360px;
             height: 350px;
@@ -139,7 +140,6 @@
             background: #fff;
             border: 1px solid #d3d3d3;
             box-sizing: border-box;
-            position: fixed;
         }
 
         #product > .cart > form > .total > h2 {
