@@ -47,7 +47,7 @@
 <div class="background-overlay"></div>
 <div class="글쓰기"></div>
 <form method="post" name="writeForm" action="writeProc.jsp" onsubmit="return writeSave()">
-	<table border="1" width="450" align="center">
+	<table class="table" width="450" align="center">
 		<tr>
 			<td align="right" colspan="2">
 				<a href="board_list.jsp">글목록</a>

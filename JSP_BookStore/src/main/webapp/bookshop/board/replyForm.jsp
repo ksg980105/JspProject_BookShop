@@ -60,7 +60,7 @@
 <b>글쓰기</b>
 <div class="background-overlay"></div>
 <form method="post" name="replyForm" action="replyProc.jsp?ref=<%=ref%>&re_step=<%=re_step%>&re_level=<%=re_level%>&pageNum=<%=pageNum%>" onsubmit="return writeSave()">
-	<table border="1" width="450" align="center">
+	<table class="table" width="450" align="center">
 		<tr>
 			<td align="right" colspan="2">
 				<a href="board_list.jsp">글목록</a>

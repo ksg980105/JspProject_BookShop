@@ -26,7 +26,7 @@
   		right: 0;
   		bottom: 0;
   		left: 0;
-  		background-image: url('images/background/bb.jpg');
+  		background-image: url('bookshop/board/images/22.jpeg');
   		background-repeat: no-repeat;
   		background-attachment: fixed;
   		background-size: cover;

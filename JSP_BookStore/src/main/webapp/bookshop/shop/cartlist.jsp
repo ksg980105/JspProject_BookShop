@@ -103,7 +103,6 @@
 
         #product > .cart > form > table td > article > a {
             float: left;
-            display: inline-block;
         }
 
         #product > .cart > form > table td > article > a > img { width: 80px;}
@@ -118,7 +117,6 @@
         #product > .cart > form > table td > article > div > p {
             text-align: left;
             color: #bl;
-            margin-top: 0px;
         }
 
         #product > .cart > form > input[name=del] {
@@ -128,10 +126,10 @@
             color: #4d4d4d;
             padding: 6px 11px;
             border-width: 1px;
-            margin-top: 0px;
         }
 
         #product > .cart > form > .total {
+        	margin-top: -100px;
             float: right;
             width: 360px;
             height: 350px;
@@ -153,7 +151,7 @@
             color: #1e1e1e;
         }
 
-        #product > .cart > form > .total > table { width: 100%; }
+        #product > .cart > form > .total > table { width: 100%;}
 
         #product > .cart > form > .total > table tr:nth-last-child(1) td {
             font-size: 20px;
@@ -236,9 +234,9 @@
                             </article></td>
                             <td><%=pb.getPname()%></td>
                             <td><%=pb.getPqty()%></td>
-                            <td><%=pb.getPrice()%></td>
+                            <td><fmt:formatNumber value="<%=pb.getPrice()%>" pattern="#,###" /></td>
                             <td><%=pb.getPoint()%></td>
-                            <td><%=productPrice%></td>
+                            <td><fmt:formatNumber value="<%=productPrice%>" pattern="#,###" /></td>
                             <td>
                             	<input type="button" value="수정" onClick="location.href = 'cartUpdate.jsp?pnum=<%=pb.getPnum()%>&pqty=<%=pb.getPqty()%>'">
                             	<input type="button" value="삭제" onClick="location.href = 'cartDel_Pro.jsp?pnum=<%=pb.getPnum()%>'">
@@ -256,7 +254,7 @@
                             </tr>
                             <tr>
                                 <td>상품금액</td>
-                                <td><%=price%>원</td>
+                                <td><fmt:formatNumber value="<%=price%>" pattern="#,###" />원</td>
                             </tr>
                             <tr>
                                 <td>포인트</td>
@@ -264,7 +262,7 @@
                             </tr>
                             <tr>
                                 <td>전체주문금액</td>
-                                <td><%=price%>원</td>
+                                <td><fmt:formatNumber value="<%=price%>" pattern="#,###" />원</td>
                             </tr>
                         </table>
                         <input type="submit" value="주문하기">

@@ -19,7 +19,7 @@
 	body{
 	  	position: static;
 	  	width: 100%;
-	  	height: 100%;
+	  	height: 70%;
 	  	margin: 0;
 	  	padding: 0;
 	}
@@ -65,9 +65,9 @@
 %>
 <body>
 <div class="background-overlay"></div>
+<hr>
 	<b>글 목록(전체 글:<%=count%>)</b>
-	<hr>
-	<table border="0">
+	<table border="0" style="float: right; margin-right: 10px; margin-bottom: 10px;">
 		<tr>
 			<td>
 				<a href="writeForm.jsp">
@@ -76,7 +76,6 @@
 			</td>
 		</tr>
 	</table>
-	<hr>
 	<%
 		if(count == 0){
 	%>

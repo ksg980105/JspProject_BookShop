@@ -77,7 +77,7 @@
                 <a href="product_info.jsp?pname=<%=pb.getPname()%>"><img src="<%=imgPath%>" style="width: 200px; height: 200px;"></a>
                 <div class="caption">
                   <p align="center"><%=pb.getPname()%></p>
-                  <p align="center"><%=pb.getPrice()%>원</p>
+                  <p align="center"><fmt:formatNumber value="<%=pb.getPrice()%>" pattern="#,###" />원</p>
                   <font style="color: red">point: <%=pb.getPoint()%>p</font>
                   <a href="cartAdd_Pro.jsp?pname=<%=pb.getPname()%>&pqty=<%=1%>"><img src="img/cartbtn.gif" style="width: 100px;"></a>
                   <a href="order.jsp?pname=<%=pb.getPname()%>&pqty=<%=1%>"><img src="img/orderbtn.gif" style="width: 100px;"></a>
@@ -106,10 +106,10 @@
                 <a href="product_info.jsp?pname=<%=pb.getPname()%>"><img src="<%=imgPath%>" style="width: 200px; height: 200px;"></a>
                 <div class="caption">
                   <p align="center"><%=pb.getPname()%></p>
-                  <p align="center"><%=pb.getPrice()%>원</p>
+                  <p align="center"><fmt:formatNumber value="<%=pb.getPrice()%>" pattern="#,###" />원</p>
                   <font style="color: red">point: <%=pb.getPoint()%>p</font>
-                  <a href=""><img src="img/cartbtn.gif" style="width: 100px;"></a>
-                  <a href=""><img src="img/orderbtn.gif" style="width: 100px;"></a>
+                  <a href="cartAdd_Pro.jsp?pname=<%=pb.getPname()%>&pqty=<%=1%>"><img src="img/cartbtn.gif" style="width: 100px;"></a>
+                  <a href="order.jsp?pname=<%=pb.getPname()%>&pqty=<%=1%>"><img src="img/orderbtn.gif" style="width: 100px;"></a>
                 </div>
               </div>
             </div>

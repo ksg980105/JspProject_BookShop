@@ -55,7 +55,7 @@
 <b>글수정</b>
 <div class="background-overlay"></div>
 <form method="post" name="updateForm" action="updateProc.jsp?num=<%=num%>&pageNum=<%=pageNum%>" onsubmit="return writeSave()">
-	<table border="1" width="450"align="center">
+	<table class="table" width="450">
 		<tr>
 			<td width="150" align="center">이 름</td>
 			<td width="300" align="left">
@@ -76,7 +76,7 @@
 		</tr>
 		<tr>
 			<td width="150" align="center">내 용</td>
-			<td width="300">
+			<td width="300" align="left">
 				<textarea name="content" id="ta" rows="15" cols="50"><%=bb.getContent()%></textarea>
 			</td>
 		</tr>
